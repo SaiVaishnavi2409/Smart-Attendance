@@ -1,0 +1,103 @@
+#con{
+    padding-left: 20px;
+}
+body{
+    font-family: 'Metropolis-Regular', "Segoe UI", Helvetica Neue, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+
+}
+/* .icon{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+} */
+@media only screen and (min-width: 600px) {
+    .frm{
+       -webkit-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        background: #fff;
+        padding: 30px;
+        width: 90%;
+        max-width: 450px;
+        position: relative;
+        padding: 10px;
+        -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+        box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+        text-align: center;
+    }
+
+    #bd{
+        padding: 50px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .frm{
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        background: #fff;
+        padding: 30px;
+        width: 90%;
+        max-width: 450px;
+        position: relative;
+        padding: 10px;
+        -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+        box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+        text-align: center;
+    }
+    #bd{
+        padding: 10px;
+    }
+    nav{
+        width: 105%;
+    }
+}
+.cls{
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #d9edf7;
+}
+.cls:hover{
+    border: 2px solid #5fbae9;
+    background-color:#fff;
+    color: black;
+    -webkit-box-shadow: 0 20px 20px 0 rgba(0,0,0,0.4);
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,0.4);
+    text-decoration: none;
+}
+table{
+    border: 2px solid black;
+}
+td{
+    padding: 10px;
+    text-align: center;
+}
+th{
+    padding: 8px;
+    text-align: center;
+    background-color: #d9edf6;
+    border:1px solid black;
+    width: 75%;
+}
+#high{
+    color: black;
+}
+#high:hover{
+    color: blue;
+}
+table{
+    width: 65%;
+}
+h4{
+    color: #f1163c;
+}

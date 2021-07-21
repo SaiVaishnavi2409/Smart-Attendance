@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.8.2
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Sep 04, 2020 at 07:09 PM
+- Server version: 10.1.34-MariaDB
+- PHP Version: 5.6.37
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="attendance" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="attend">
+                CREATE TABLE `attend` (
+                  `d_id` int(10) NOT NULL AUTO_INCREMENT,
+                  `date` date NOT NULL,
+                  `class` text NOT NULL,
+                  `details` text NOT NULL,
+                  PRIMARY KEY (`d_id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="student">
+                CREATE TABLE `student` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `name` text NOT NULL,
+                  `roll` int(11) NOT NULL,
+                  `class` text NOT NULL,
+                  `status` text NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="user">
+                CREATE TABLE `user` (
+                  `id` int(5) NOT NULL AUTO_INCREMENT,
+                  `username` varchar(10) NOT NULL,
+                  `password` varchar(15) NOT NULL,
+                  `token` varchar(32) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'attendance'
+    -->
+    <database name="attendance">
+        <!-- Table attend -->
+        <table name="attend">
+            <column name="d_id">1</column>
+            <column name="date">2020-07-16</column>
+            <column name="class">I</column>
+            <column name="details">-01-02-04-</column>
+        </table>
+        <table name="attend">
+            <column name="d_id">3</column>
+            <column name="date">2020-07-17</column>
+            <column name="class">I</column>
+            <column name="details">-01-02-03-04-</column>
+        </table>
+        <table name="attend">
+            <column name="d_id">8</column>
+            <column name="date">2020-07-18</column>
+            <column name="class">I</column>
+            <column name="details">-01-02-03-</column>
+        </table>
+        <table name="attend">
+            <column name="d_id">13</column>
+            <column name="date">2020-07-19</column>
+            <column name="class">I</column>
+            <column name="details">-01-02-04-05-</column>
+        </table>
+        <!-- Table student -->
+        <table name="student">
+            <column name="id">1</column>
+            <column name="name">Jack</column>
+            <column name="roll">1</column>
+            <column name="class">I</column>
+            <column name="status">Absent</column>
+        </table>
+        <table name="student">
+            <column name="id">2</column>
+            <column name="name">Sarat</column>
+            <column name="roll">1</column>
+            <column name="class">II</column>
+            <column name="status">Absent</column>
+        </table>
+        <table name="student">
+            <column name="id">3</column>
+            <column name="name">Marry</column>
+            <column name="roll">2</column>
+            <column name="class">I</column>
+            <column name="status">Absent</column>
+        </table>
+        <table name="student">
+            <column name="id">4</column>
+            <column name="name">Arthur</column>
+            <column name="roll">1</column>
+            <column name="class">III</column>
+            <column name="status">Absent</column>
+        </table>
+        <table name="student">
+            <column name="id">5</column>
+            <column name="name">Tony</column>
+            <column name="roll">2</column>
+            <column name="class">III</column>
+            <column name="status">Absent</column>
+        </table>
+        <table name="student">
+            <column name="id">7</column>
+            <column name="name">John</column>
+            <column name="roll">3</column>
+            <column name="class">I</column>
+            <column name="status">Absent</column>
+        </table>
+        <table name="student">
+            <column name="id">8</column>
+            <column name="name">Bob</column>
+            <column name="roll">4</column>
+            <column name="class">I</column>
+            <column name="status">Absent</column>
+        </table>
+        <table name="student">
+            <column name="id">9</column>
+            <column name="name">Sujit</column>
+            <column name="roll">2</column>
+            <column name="class">II</column>
+            <column name="status">Absent</column>
+        </table>
+        <table name="student">
+            <column name="id">10</column>
+            <column name="name">Sumanta</column>
+            <column name="roll">3</column>
+            <column name="class">II</column>
+            <column name="status">Absent</column>
+        </table>
+        <table name="student">
+            <column name="id">11</column>
+            <column name="name">Ajay</column>
+            <column name="roll">4</column>
+            <column name="class">II</column>
+            <column name="status">Absent</column>
+        </table>
+        <table name="student">
+            <column name="id">12</column>
+            <column name="name">Mark</column>
+            <column name="roll">3</column>
+            <column name="class">III</column>
+            <column name="status">Absent</column>
+        </table>
+        <table name="student">
+            <column name="id">13</column>
+            <column name="name">Lusi</column>
+            <column name="roll">5</column>
+            <column name="class">I</column>
+            <column name="status">Absent</column>
+        </table>
+        <!-- Table user -->
+        <table name="user">
+            <column name="id">1</column>
+            <column name="username">admin</column>
+            <column name="password">password</column>
+            <column name="token">21232f297a57a5a743894a0e4a801fc3</column>
+        </table>
+    </database>
+</pma_xml_export>
